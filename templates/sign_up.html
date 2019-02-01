@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="jumbotron">
+        <h1>Please sign up!</h1>
+
+        <form action="{{url_for('report')}}">
+            <div class"form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+
+            <div class"form-check">
+                <input type="checkbox">
+                <label for="check_out">Check me out</label>
+                <div>
+                    <input type="submit" value="Submit Form">
+                </div>
+            </div>
+        </form>
+ </div>
+
+{% endblock %}
